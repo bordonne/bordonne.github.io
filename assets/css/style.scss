@@ -1,0 +1,11 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.page-header {
+  background-image: url("/assets/img/background.jpg");
+}
+
+a .project-name { color: white; text-decoration: none; }
+a:hover .project-name { text-decoration: underline; }
