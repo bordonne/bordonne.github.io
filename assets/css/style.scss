@@ -3,9 +3,31 @@
 
 @import "{{ site.theme }}";
 
-.page-header {
-  background-image: url("/assets/img/background.jpg");
+body {
+  background: black;
 }
 
-a .project-name { color: white; text-decoration: none; }
+.page-header {
+  background: #b6d8f5;
+  border-bottom: 4px solid black;
+  .project-name {
+    max-width: 100%;
+  }
+}
+
+.main-content {
+  background-image: url("/assets/img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  min-height: 30rem;
+}
+
+a .project-name { color: black; text-decoration: none; }
 a:hover .project-name { text-decoration: underline; }
+
+@media screen and (min-width: 64em) {
+  .main-content {
+    max-width: 100%;
+    padding: 2rem 15rem;
+  }
+}
