@@ -9,11 +9,22 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
     <section class="page-header">
-      <a href="{{ site.url }}"><img class="project-name" src="/assets/img/bordonnecom.gif" alt="{{ site.title | default: site.github.repository_name }}"/></a>
+      <div class="contact-links">
+        <a target="_blank" href="mailto:bonjour@bordonne.com">
+          <i class="fa fa-at" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://github.com/bordonne">
+          <i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://twitter.com/bordonne_">
+          <i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://telegram.me/bordonne">
+          <i class="fa fa-telegram" aria-hidden="true"></i></a>
+      </div>
+      <a class="project-name" href="{{ site.url }}"><img src="/assets/img/bordonnecom.gif" alt="{{ site.title | default: site.github.repository_name }}"/></a>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       <div class="site-links">
         <button>about</button>
