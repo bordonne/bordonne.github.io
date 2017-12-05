@@ -4,8 +4,9 @@
 @import "{{ site.theme }}";
 
 body {
-  background: black;
-  min-height: 100%;
+  background: url("/assets/img/background.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 /* Page Header */
@@ -42,40 +43,42 @@ body {
   .site-links {
     padding-bottom: 1rem;
 
-    button {
+    a {
+      display: inline-block;
+      cursor: pointer;
       color: #d861a6; // Pink
       font-size: 1.3em;
       width: 10em;
       max-width: 30%;  // For smaller displays
-      background: none;
       border: 4px solid transparent;
       border-radius: 0px;
     }
 
-    button:nth-child(odd):hover {
+    a:hover {
+      text-decoration: none;
+    }
+
+    a:nth-child(odd):hover {
       border: 4px solid #d861a6; // Pink
     }
 
-    button:nth-child(even):hover {
+    a:nth-child(even):hover {
       background: #d861a6; // Pink
       color: white;
     }
 
-    button:focus {
+    a:focus {
       outline: 0; // To remove the defalut blue outline when clicked
     }
   }
 }
 
 .main-content {
-  background: url("/assets/img/background.jpg") no-repeat center fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-  min-height: 30rem;
+  color: white;
 }
 
 .site-footer {
-  border-top: none;
+  display: none; // Don't want to remove it from the HTML
 }
 
 
