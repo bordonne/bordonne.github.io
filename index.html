@@ -6,95 +6,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐹</text></svg>">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body,
-        h1 {
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #071021;
+            color: #f1f5f9;
+        }
+        html, h1 {
             font-family: "Raleway", Arial, sans-serif;
-            background-color: #fffefa;
+        }
+        .page {
+            max-width: 1200px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: auto;
+        }
+        .block {
+            width: 600px;
+            align-self: center;
+        }
+        .pink {
+            font-weight: bold;
+            color: #ffdddd;
+        }
+        .contact {
+            font-weight: normal;
+            text-decoration: underline;
+        }
+        a {
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        a:hover span {
+            text-decoration: underline;
         }
 
-        h1 {
-            letter-spacing: 6px;
-        }
-
-        .w3-row-padding img {
-            margin-bottom: 12px;
-        }
-        #separator {
-            height: 11px;
-            border-top: 3px solid #7f4c3e;
-            border-bottom: 3px solid #ad6167;
-            background-color: #fabd90;
-            opacity: 0.8;
-        }
-        #page-content {
-            background-image: url('images/background.jpg');
-            background-size: auto 100%;
-            height: 400px;
-            opacity: 0.8;
-        }
-        footer {
-            position: relative;
-            bottom: 58px;
-            height: 0px;
-            color: grey;
-        }
     </style>
 </head>
 
 <body>
 
     <!-- !PAGE CONTENT! -->
-    <div class="w3-content" style="max-width:1500px">
+    <div class="page">
+
+        <!-- Nav -->
+        <div class="w3-panel" style="align-self: flex-end;">
+            <a href="#" class="w3-button w3-hover-pale-red">Resume (en)</a>
+            <a href="#" class="w3-button w3-hover-pale-red">Curriculum Vitae (fr)</a>
+            <a href="#" class="w3-button w3-hover-pale-red">Portfolio</a>
+        </div>
 
         <!-- Header -->
-        <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-            <h1>LESLIE BORDONNÉ</h1>
+        <header class="block">
+            <h1>Hi, I'm <span class="pink">Leslie Bordonné</span>!</h1>
 
-            <div class="w3-padding-32">
-                <div class="w3-bar w3-border">
-                    <a href="#" class="w3-bar-item w3-button w3-light-grey">Home</a>
-                    <a href="#" class="w3-bar-item w3-button">Resume</a>
-                    <a href="#" class="w3-bar-item w3-button">Portfolio</a>
-                    <a href="#" class="w3-bar-item w3-button w3-hide-small">Contact</a>
-                </div>
+            <div class="description">
+               <p> I'm a Fullstack web developer based in Strasbourg, France. </p>
+               <p> I'm passionate about creating thoughtful and reliable web applications.
+                I particularly enjoy working on projects that improve learning and education through technology.</p>
             </div>
+
+            <div class="separator pink" style="font-size: 40px;">﹏﹏﹏﹏﹏﹏</div>
         </header>
 
         <!-- Page Content -->
-        <div id="separator"></div>
-        <div id="page-content" class="w3-row-padding">
-            <div class="w3-half">
-                <img src="" style="width:100%">
-                <img src="" style="width:100%">
-                <img src="" style="width:100%">
-                <img src="" style="width:100%">
-                <img src="" style="width:100%">
-                <img src="" style="width:100%">
-                <img src="" style="width:100%">
-            </div>
+        <div class="block">
 
-            <div class="w3-half">
-                <img src="" style="width:100%">
-                <img src="" style="width:100%">
-                <img src="" style="width:100%">
-                <img src="" style="width:100%">
-                <img src="" style="width:100%">
-                <img src="" style="width:100%">
-            </div>
+            <h3>Find me on</h3>
+            <a href="https://github.com/bordonne"><i class="fab fa-github"></i> <span>Github</span></a>
+            <a href="https://bruise.itch.io/"><i class="fab fa-itch-io"></i> <span>Itch.io</span></a>
+            <a href="https://www.instagram.com/bruislie/"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
+            <a href="https://t.me/bordonne"><i class="fa-brands fa-telegram"></i> <span>Telegram</span></a>
+
+            <h3 style="margin-top: 30px;">Contact</h3>
+            You can reach me out anytime at <span class="pink contact">contact@bordonne.com</span>
+
         </div>
 
-        <!-- End Page Content -->
+         <!-- Footer -->
+        <footer class="w3-panel">
+            <p>© 2025 - Made by Leslie Bordonné 🐹</p>
+        </footer>
     </div>
-
-    <!-- Footer -->
-    <footer class="w3-container w3-center">
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
-                class="w3-hover-text-green">w3.css</a></p>
-    </footer>
 
 </body>
 
