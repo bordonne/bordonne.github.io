@@ -30,6 +30,7 @@
         }
         .block {
             width: 600px;
+            max-width: 100%;
             align-self: center;
         }
         .pink {
@@ -48,6 +49,11 @@
             text-decoration: underline;
         }
 
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 30px;
+            }
+        }
     </style>
 </head>
 
@@ -59,12 +65,12 @@
         <!-- Nav -->
         <div class="w3-panel" style="align-self: flex-end;">
             <a href="#" class="w3-button w3-hover-pale-red">Resume (en)</a>
-            <a href="#" class="w3-button w3-hover-pale-red">Curriculum Vitae (fr)</a>
+            <a href="#" class="w3-button w3-hover-pale-red cv">Curriculum Vitae (fr)</a>
             <a href="#" class="w3-button w3-hover-pale-red">Portfolio</a>
         </div>
 
         <!-- Header -->
-        <header class="block">
+        <header class="w3-panel block">
             <h1>Hi, I'm <span class="pink">Leslie Bordonné</span>!</h1>
 
             <div class="description">
@@ -77,7 +83,7 @@
         </header>
 
         <!-- Page Content -->
-        <div class="block">
+        <div class="w3-panel block">
 
             <h3>Find me on</h3>
             <a href="https://github.com/bordonne"><i class="fab fa-github"></i> <span>Github</span></a>
