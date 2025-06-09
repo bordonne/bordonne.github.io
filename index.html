@@ -9,52 +9,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            background-color: #071021;
-            color: #f1f5f9;
-        }
-        html, h1 {
-            font-family: "Raleway", Arial, sans-serif;
-        }
-        .page {
-            max-width: 1200px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin: auto;
-        }
-        .block {
-            width: 600px;
-            max-width: 100%;
-            align-self: center;
-        }
-        .pink {
-            font-weight: bold;
-            color: #ffdddd;
-        }
-        .contact {
-            font-weight: normal;
-            text-decoration: underline;
-        }
-        a {
-            text-decoration: none;
-            margin-right: 10px;
-        }
-        a:hover span {
-            text-decoration: underline;
-        }
-
-        @media only screen and (max-width: 600px) {
-            h1 {
-                font-size: 30px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -64,9 +19,9 @@
 
         <!-- Nav -->
         <div class="w3-panel" style="align-self: flex-end;">
-            <a href="#" class="w3-button w3-hover-pale-red">Resume (en)</a>
-            <a href="#" class="w3-button w3-hover-pale-red cv">Curriculum Vitae (fr)</a>
-            <a href="#" class="w3-button w3-hover-pale-red">Portfolio</a>
+            <a href="#" class="w3-button background-pink">Resume (en)</a>
+            <a href="#" class="w3-button background-pink">Curriculum Vitae (fr)</a>
+            <a href="portfolio.html" class="w3-button background-pink">Portfolio</a>
         </div>
 
         <!-- Header -->
@@ -79,17 +34,17 @@
                 I particularly enjoy working on projects that improve learning and education through technology.</p>
             </div>
 
-            <div class="separator pink" style="font-size: 40px;">﹏﹏﹏﹏﹏﹏</div>
+            <div class="separator pink">﹏﹏﹏﹏﹏﹏</div>
         </header>
 
         <!-- Page Content -->
-        <div class="w3-panel block">
+        <div class="w3-panel block links">
 
             <h3>Find me on</h3>
-            <a href="https://github.com/bordonne"><i class="fab fa-github"></i> <span>Github</span></a>
-            <a href="https://bruise.itch.io/"><i class="fab fa-itch-io"></i> <span>Itch.io</span></a>
-            <a href="https://www.instagram.com/bruislie/"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
-            <a href="https://t.me/bordonne"><i class="fa-brands fa-telegram"></i> <span>Telegram</span></a>
+            <a href="https://github.com/bordonne" class="w3-margin-right"><i class="fab fa-github"></i> <span>Github</span></a>  
+            <a href="https://bruise.itch.io/" class="w3-margin-right"><i class="fab fa-itch-io"></i> <span>Itch.io</span></a>  
+            <a href="https://www.instagram.com/bruislie/" class="w3-margin-right"><i class="fab fa-instagram"></i> <span>Instagram</span></a>  
+            <a href="https://t.me/bordonne" class="w3-margin-right"><i class="fa-brands fa-telegram"></i> <span>Telegram</span></a>  
 
             <h3 style="margin-top: 30px;">Contact</h3>
             You can reach me out anytime at <span class="pink contact">contact@bordonne.com</span>

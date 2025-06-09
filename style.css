@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #071021;
+    color: #f1f5f9;
+}
+html, h1 {
+    font-family: "Raleway", Arial, sans-serif;
+}
+.page {
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+.block {
+    width: 600px;
+    max-width: 100%;
+    align-self: center;
+}
+.separator {
+   font-size: 40px; 
+}
+.pink {
+    font-weight: bold;
+    color: #EECECF;
+}
+.background-pink:hover {
+    background-color: #EECECF !important;
+}
+.contact {
+    font-weight: normal;
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+}
+.portfolio a, a:hover span {
+    text-decoration: underline;
+    color: #EECECF;
+}
+.portfolio img {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.portfolio figure {
+    margin: 20px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+}
