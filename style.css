@@ -86,4 +86,7 @@ video {
     h1 {
         font-size: 30px;
     }
+    .nav {
+        font-size: 13px;
+    }
 }
