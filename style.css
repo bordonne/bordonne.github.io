@@ -17,7 +17,7 @@ html, h1 {
     margin: auto;
 }
 .block {
-    width: 600px;
+    width: 620px;
     max-width: 100%;
     align-self: center;
 }
@@ -49,9 +49,37 @@ a {
   display: block;
   margin: 0 auto;
 }
-
 .portfolio figure {
     margin: 20px 0px;
+}
+video {
+    max-width: 100%;
+}
+.zoomable {
+  max-width: 100%;
+  transition: 0.3s ease;
+}
+
+/* Zoom on images on click */
+#lightbox {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.hidden {
+  display: none !important;
 }
 
 @media only screen and (max-width: 600px) {

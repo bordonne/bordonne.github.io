@@ -62,7 +62,7 @@
                     <figcaption>Author site (Drupal-based) for creating Nuggets with H5P.</figcaption>
                 </figure>
                 <figure class="portfolio-item">
-                    <img src="images/naasmoodleplugin.jpg" alt="Screenshot of NaaS Moodle Plugin">
+                    <img src="images/naasmoodleplugin.jpg" alt="Screenshot of NaaS Moodle Plugin" class="zoomable">
                     <figcaption><a href="https://github.com/ISAE-SUPAERO-IDEA/moodle-mod_naas">Moodle plugin</a> for integrating Nuggets into courses in Moodle platforms.</figcaption>
                 </figure>
             </section>
@@ -70,24 +70,24 @@
             <section>
                 <h3>SOS Planet</h3>
                 <p>SOS Planet is a web app for an association that teaches children eco-friendly habits, in a fun and engaging way. Made with Vue.js and Flask.</p>
-                <img src="images/sosplanete1.jpg" alt="Screenshot of SOS Planet" class="w3-margin-bottom"/>
-                <img src="images/sosplanete2.jpg" alt="Screenshot of SOS Planet" class="w3-margin-bottom"/>
-                <img src="images/sosplanete3.jpg" alt="Screenshot of SOS Planet"/>
+                <img src="images/sosplanete1.jpg" alt="Screenshot of SOS Planet" class="w3-margin-bottom zoomable"/>
+                <img src="images/sosplanete2.jpg" alt="Screenshot of SOS Planet" class="w3-margin-bottom zoomable"/>
+                <img src="images/sosplanete3.jpg" alt="Screenshot of SOS Planet" class="zoomable"/>
             </section>
             <div class="separator pink">﹏﹏﹏﹏﹏﹏</div>
             <section>
                 <h3>UNESS.fr</h3>
                 <p><a href="https://www.uness.fr/">UNESS.fr</a> is the french online university dedicated to Sports and Healthcare. I contributed to the Moodle-based SIDES evaluation platform, used by medical, pharmacy, and dentistry students across France.</p>
-                <img src="images/sides1.jpg" alt="Screenshot of SIDESNG" class="w3-margin-bottom"/>
-                <img src="images/sides2.jpg" alt="Screenshot of SIDESNG"/>
+                <img src="images/sides1.jpg" alt="Screenshot of SIDESNG" class="w3-margin-bottom zoomable"/>
+                <img src="images/sides2.jpg" alt="Screenshot of SIDESNG" class="zoomable"/>
             </section>
             <div class="separator pink">﹏﹏﹏﹏﹏﹏</div>
             <section>
                 <h3>LOMDESS</h3>
                 <p>An online training company that offers courses for professionals in the health and social care sector. I managed an Open edX plateform as a SPOC.</p>
-                <img src="images/lomdess1.jpg" alt="Screenshot of LOMDESS" class="w3-margin-bottom"/>
-                <img src="images/lomdess2.jpg" alt="Screenshot of LOMDESS" class="w3-margin-bottom"/>
-                <img src="images/lomdess3.jpg" alt="Screenshot of LOMDESS"/>
+                <img src="images/lomdess1.jpg" alt="Screenshot of LOMDESS" class="w3-margin-bottom zoomable"/>
+                <img src="images/lomdess2.jpg" alt="Screenshot of LOMDESS" class="w3-margin-bottom zoomable"/>
+                <img src="images/lomdess3.jpg" alt="Screenshot of LOMDESS" class="zoomable"/>
             </section>
             <div class="separator pink">﹏﹏﹏﹏﹏﹏</div>
 
@@ -97,8 +97,28 @@
         <footer class="w3-panel">
             <p>© 2025 - Made by Leslie Bordonné 🐹</p>
         </footer>
+
+        <!-- Lightbox container -->
+        <div id="lightbox" class="hidden">
+            <img id="lightbox-img" src="" alt="Zoom image">
+        </div>
     </div>
+    <script>
+        /* Zoom on images on click */
+        const zoomables = document.querySelectorAll('.zoomable');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
 
+        zoomables.forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightbox.classList.remove('hidden');
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+          lightbox.classList.add('hidden');
+        });
+    </script>
 </body>
-
 </html>
