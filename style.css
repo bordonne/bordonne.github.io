@@ -35,7 +35,8 @@ html, h1 {
     font-weight: normal;
     text-decoration: underline;
 }
-a {
+.links a {
+    display: inline-block;
     text-decoration: none;
 }
 .portfolio a, a:hover span {
